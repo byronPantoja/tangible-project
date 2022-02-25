@@ -1,15 +1,15 @@
 import Link from './Link'
+import Image from './Image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import ServicesAndPricingMenu from './ServicesAndPricing'
-import Logo from '../data/logo.svg'
-import services from '../data/servicesData'
-import callsToAction from '../data/ctaData'
-import company from '../data/companyData'
-import resources from '../data/resourcesData'
-import blogPosts from '../data/blogPostsData'
+import Logo from '@/data/logo.svg'
+import services from '@/data/servicesData'
+import company from '@/data/companyData'
+import resources from '@/data/resourcesData'
+import blogPosts from '@/data/blogPostsData'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -129,7 +129,7 @@ const Navbar = () => {
                                       className="-m-3 flex rounded-lg p-3 hover:bg-gray-100"
                                     >
                                       <div className="hidden flex-shrink-0 sm:block">
-                                        <img
+                                        <Image
                                           className="h-20 w-32 rounded-md object-cover"
                                           src={post.imageUrl}
                                           alt=""
@@ -192,7 +192,7 @@ const Navbar = () => {
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  <Image
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"

@@ -1,13 +1,9 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
-import Logo from '../data/logo.svg'
-import services from '../data/servicesData'
-import callsToAction from '../data/ctaData'
-import company from '../data/companyData'
-import resources from '../data/resourcesData'
-import blogPosts from '../data/blogPostsData'
+
+import services from '@/data/servicesData'
+import callsToAction from '@/data/ctaData'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

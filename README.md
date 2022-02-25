@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Another POC for Prepp
 
-## Getting Started
+**Requirements:**
 
-First, run the development server:
+> "Yes, give me a replacement of our current site, nothing extra yet"
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Source: [Discord - Jordan to Team](https://discord.com/channels/877015382311964683/925941168951398501/946606147874455552)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## To-do's
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Create FE version of prepp.photo using NextJS
+**Landing Page**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Navigation
+  - [x] Logo / Home button
+  - [x] Services dropdown-menu
+    - [x] Photo Editing
+    - [x] Video Editing
+    - [x] Twilight Editing
+    - [x] CTA area - bottom
+      - [x] add video link to watch demo
+      - [x] link View Products to Samples
+      - [x] link contact
+      - [ ] edit description
+  - [x] Samples
+  - [x] Contact Us
+- [ ] Free Trial CTA
+  - [ ] Edit Title
+  - [ ] Edit description
+  - [ ] Edit CTA button
+  - [ ] Add Photo
+- [ ] embed video - section
+- [ ] What we do section
+  - [ ] add photo
+  - [ ] add title
+  - [ ] add description
+  - [ ] add button
+- [ ] What we offer section
+  - [ ] add title
+  - [ ] add description
+  - [ ] add button
+  - [ ] add photo
+- [ ] How we do it section
+  - [ ] add photo
+  - [ ] add title
+  - [ ] add description
+  - [ ] add button
+- [ ] Let's Talk - CTA
+  - [ ] add title
+  - [ ] add button
+- [ ] Add footer section
+  - [ ] Add all links from top
+  - [ ] add faqs
+  - [ ] add socials
