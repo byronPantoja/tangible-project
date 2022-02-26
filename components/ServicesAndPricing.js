@@ -1,3 +1,4 @@
+import Link from './Link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
@@ -41,7 +42,7 @@ const ServicesAndPricingMenu = () => {
             <Popover.Panel className="absolute inset-x-0 top-full z-10 hidden transform bg-white shadow-lg md:block">
               <div className="mx-auto grid max-w-7xl gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                 {services.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50"
@@ -62,14 +63,14 @@ const ServicesAndPricingMenu = () => {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="bg-gray-50">
                 <div className="mx-auto max-w-7xl space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                   {callsToAction.map((item) => (
                     <div key={item.name} className="flow-root">
-                      <a
+                      <Link
                         href={item.href}
                         className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                       >
@@ -78,7 +79,7 @@ const ServicesAndPricingMenu = () => {
                           aria-hidden="true"
                         />
                         <span className="ml-3">{item.name}</span>
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>

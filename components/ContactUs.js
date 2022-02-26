@@ -1,5 +1,5 @@
 import Image from './Image'
-
+import Link from './Link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
@@ -14,13 +14,13 @@ function classNames(...classes) {
 const listMap = (item) => {
   return (
     <li key={item.name} className="flow-root">
-      <a
+      <Link
         href={item.href}
         className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
       >
         <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
         <span className="ml-4">{item.name}</span>
-      </a>
+      </Link>
     </li>
   )
 }
@@ -78,7 +78,7 @@ const ContactUs = () => {
                       <ul role="list" className="mt-5 space-y-6">
                         {resources.map((item) => (
                           <li key={item.name} className="flow-root">
-                            <a
+                            <Link
                               href={item.href}
                               className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
                             >
@@ -87,7 +87,7 @@ const ContactUs = () => {
                                 aria-hidden="true"
                               />
                               <span className="ml-4">{item.name}</span>
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -101,7 +101,7 @@ const ContactUs = () => {
                       <ul role="list" className="mt-6 space-y-6">
                         {samples.map((post) => (
                           <li key={post.id} className="flow-root">
-                            <a
+                            <Link
                               href={post.href}
                               className="-m-3 flex rounded-lg p-3 hover:bg-gray-100"
                             >
@@ -120,16 +120,16 @@ const ContactUs = () => {
                                 </h4>
                                 <p className="mt-1 text-sm text-gray-500">{post.preview}</p>
                               </div>
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div className="mt-6 text-sm font-medium">
-                      <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                      <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                         {' '}
                         View all posts <span aria-hidden="true">&rarr;</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
