@@ -1,21 +1,9 @@
 import {
-  BookmarkAltIcon,
   BriefcaseIcon,
-  ChartBarIcon,
-  CheckCircleIcon,
-  CursorClickIcon,
-  DesktopComputerIcon,
-  GlobeAltIcon,
   InformationCircleIcon,
-  MenuIcon,
   NewspaperIcon,
   OfficeBuildingIcon,
-  PhoneIcon,
-  PlayIcon,
   ShieldCheckIcon,
-  UserGroupIcon,
-  ViewGridIcon,
-  XIcon,
 } from '@heroicons/react/outline'
 const company = [
   { name: 'About', href: '#', icon: InformationCircleIcon },
