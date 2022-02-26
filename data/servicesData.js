@@ -3,20 +3,20 @@ import { ChartBarIcon, CursorClickIcon, ViewGridIcon } from '@heroicons/react/ou
 const services = [
   {
     name: 'Photo Editing',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    description: 'Real Estate Photo Editing / Processing - $0.50 each',
+    href: '/photoEditing',
     icon: ChartBarIcon,
   },
   {
     name: 'Video Editing',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    description: 'Video Editing - Starting at $5',
+    href: '/videoEditing',
     icon: CursorClickIcon,
   },
   {
     name: 'Twilight',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    description: 'Virtual Twilight - $5 Each',
+    href: '/twilightEditing',
     icon: ViewGridIcon,
   },
 ]
