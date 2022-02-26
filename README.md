@@ -54,3 +54,4 @@ Create FE version of prepp.photo using NextJS
   - [ ] Add all links from top
   - [ ] add faqs
   - [ ] add socials
+        git
