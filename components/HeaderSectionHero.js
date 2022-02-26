@@ -1,3 +1,5 @@
+import Link from './Link'
+
 const HeroSectionHeader = () => {
   return (
     <div className="relative overflow-hidden bg-white">
@@ -24,9 +26,7 @@ const HeroSectionHeader = () => {
                         <iframe
                           className="aspect-video w-full"
                           src="https://player.vimeo.com/video/659875234?h=1980ccb4fb&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
                         ></iframe>
                       </div>
                     </div>
@@ -34,12 +34,12 @@ const HeroSectionHeader = () => {
                 </div>
               </div>
 
-              <a
+              <Link
                 href="/freetrial"
                 className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
               >
                 Try for Free
-              </a>
+              </Link>
             </div>
           </div>
         </div>

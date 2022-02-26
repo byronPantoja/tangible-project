@@ -33,21 +33,21 @@ const Navbar = () => {
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
               <ServicesAndPricingMenu />
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Samples
-              </a>
+              </Link>
               <ContactUs />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign in
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
               >
                 Sign up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
                 <nav>
                   <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                     {services.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
@@ -96,74 +96,74 @@ const Navbar = () => {
                           <item.icon className="h-6 w-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <div className="mt-8 text-base">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                    <Link href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                       {' '}
                       View all products <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                   </div>
                 </nav>
               </div>
             </div>
             <div className="py-6 px-5">
               <div className="grid grid-cols-2 gap-4">
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Pricing
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Docs
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Company
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Resources
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Blog
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="#"
                   className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Contact Sales
-                </a>
+                </Link>
               </div>
               <div className="mt-6">
-                <a
+                <Link
                   href="#"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                 >
                   Sign up
-                </a>
+                </Link>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                     Sign in
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
