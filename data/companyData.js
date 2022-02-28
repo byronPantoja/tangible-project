@@ -1,15 +1,8 @@
-import {
-  BriefcaseIcon,
-  InformationCircleIcon,
-  NewspaperIcon,
-  OfficeBuildingIcon,
-  ShieldCheckIcon,
-} from '@heroicons/react/outline'
+import { BriefcaseIcon, InformationCircleIcon, OfficeBuildingIcon } from '@heroicons/react/outline'
+
 const company = [
   { name: 'About', href: '#', icon: InformationCircleIcon },
-  { name: 'Customers', href: '#', icon: OfficeBuildingIcon },
-  { name: 'Press', href: '#', icon: NewspaperIcon },
-  { name: 'Careers', href: '#', icon: BriefcaseIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+  { name: 'Contact', href: '#', icon: OfficeBuildingIcon },
+  { name: 'FAQ', href: '#', icon: BriefcaseIcon },
 ]
 module.exports = company

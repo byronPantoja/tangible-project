@@ -4,7 +4,6 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-import resources from '@/data/resourcesData'
 import company from '@/data/companyData'
 import samples from '@/data/samplesData'
 
@@ -58,14 +57,6 @@ const ContactUs = () => {
                       </h3>
                       <ul role="list" className="mt-5 space-y-6">
                         {company.map(MapNavList)}
-                      </ul>
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-medium uppercase tracking-wide text-gray-500">
-                        Resources
-                      </h3>
-                      <ul role="list" className="mt-5 space-y-6">
-                        {resources.map(MapNavList)}
                       </ul>
                     </div>
                   </nav>
