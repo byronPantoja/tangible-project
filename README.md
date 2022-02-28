@@ -23,9 +23,15 @@ Create FE version of prepp.photo using NextJS
       - [x] add video link to watch demo
       - [x] link View Products to Samples
       - [x] link contact
-      - [ ] edit description
+      - [x] edit description
   - [x] Samples
   - [x] Contact Us
+- [x] Contact Us dropdown-menu
+  - [x] about
+  - [x] contact
+  - [x] faq
+  - [x] samples preview
+- [x] Create all Pages in Navbar Links
 - [ ] Free Trial CTA
   - [ ] Edit Title
   - [ ] Edit description

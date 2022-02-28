@@ -2,6 +2,7 @@ import Link from './Link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import MapNavList from './MapNavList'
 
 import services from '@/data/servicesData'
 import callsToAction from '@/data/ctaData'
@@ -68,20 +69,7 @@ const ServicesAndPricingMenu = () => {
               </div>
               <div className="bg-gray-50">
                 <div className="mx-auto max-w-7xl space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
-                  {callsToAction.map((item) => (
-                    <div key={item.name} className="flow-root">
-                      <Link
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
-                      >
-                        <item.icon
-                          className="h-6 w-6 flex-shrink-0 text-gray-400"
-                          aria-hidden="true"
-                        />
-                        <span className="ml-3">{item.name}</span>
-                      </Link>
-                    </div>
-                  ))}
+                  {callsToAction.map(MapNavList)}
                 </div>
               </div>
             </Popover.Panel>
