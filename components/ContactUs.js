@@ -8,21 +8,10 @@ import resources from '@/data/resourcesData'
 import company from '@/data/companyData'
 import samples from '@/data/samplesData'
 
+import MapNavList from './MapNavList'
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
-}
-const listMap = (item) => {
-  return (
-    <li key={item.name} className="flow-root">
-      <Link
-        href={item.href}
-        className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
-      >
-        <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-        <span className="ml-4">{item.name}</span>
-      </Link>
-    </li>
-  )
 }
 
 const ContactUs = () => {
@@ -68,7 +57,7 @@ const ContactUs = () => {
                         Company
                       </h3>
                       <ul role="list" className="mt-5 space-y-6">
-                        {company.map.listMap}
+                        {company.map(MapNavList)}
                       </ul>
                     </div>
                     <div>
@@ -76,20 +65,7 @@ const ContactUs = () => {
                         Resources
                       </h3>
                       <ul role="list" className="mt-5 space-y-6">
-                        {resources.map((item) => (
-                          <li key={item.name} className="flow-root">
-                            <Link
-                              href={item.href}
-                              className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
-                            >
-                              <item.icon
-                                className="h-6 w-6 flex-shrink-0 text-gray-400"
-                                aria-hidden="true"
-                              />
-                              <span className="ml-4">{item.name}</span>
-                            </Link>
-                          </li>
-                        ))}
+                        {resources.map(MapNavList)}
                       </ul>
                     </div>
                   </nav>
