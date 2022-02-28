@@ -32,10 +32,13 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
+              {/* services dropdown */}
               <ServicesAndPricingMenu />
+              {/* samples */}
               <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Samples
               </Link>
+              {/* contact us dropdown */}
               <ContactUs />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
