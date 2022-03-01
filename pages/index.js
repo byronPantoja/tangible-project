@@ -1,11 +1,11 @@
 import Navbar from '@/components/Navbar'
-import HeaderSectionHero from '@/components/HeaderSectionHero'
+import FreeTrialCTA from '@/components/FreeTrialCTA'
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <HeaderSectionHero />
+      <FreeTrialCTA />
     </div>
   )
 }
