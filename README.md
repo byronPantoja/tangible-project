@@ -13,7 +13,7 @@ Source: [Discord - Jordan to Team](https://discord.com/channels/8770153823119646
 Create FE version of prepp.photo using NextJS
 **Landing Page**
 
-- [ ] Navigation
+- [x] Navigation
   - [x] Logo / Home button
   - [x] Services dropdown-menu
     - [x] Photo Editing
@@ -61,3 +61,14 @@ Create FE version of prepp.photo using NextJS
   - [ ] add faqs
   - [ ] add socials
         git
+- [ ] Services Page
+  - [ ] PE Page
+  - [ ] VE Page
+  - [ ] TE Page
+- [ ] Samples Page
+  - [ ] PE Samples
+  - [ ] VE Samples
+  - [ ] TE Samples
+- [ ] FAQ Page
+- [ ] Contact Page
+- [x] Free Trial Page
