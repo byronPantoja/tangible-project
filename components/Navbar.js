@@ -3,7 +3,7 @@ import Image from './Image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import ServicesAndPricingMenu from './ServicesAndPricing'
+import ServicesMenu from './ServicesMenu'
 import Logo from '@/data/logo.svg'
 import services from '@/data/servicesData'
 
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
               {/* services dropdown */}
-              <ServicesAndPricingMenu />
+              <ServicesMenu />
               {/* samples */}
               <Link
                 href="/samples"

@@ -9,6 +9,6 @@ module.exports = {
     return config
   },
   images: {
-    domains: ['images.unsplash.com', 'images.squarespace-cdn.com'],
+    domains: ['images.unsplash.com', 'tailwindui.com', 'images.squarespace-cdn.com'],
   },
 }
