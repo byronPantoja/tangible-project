@@ -32,17 +32,17 @@ Create FE version of prepp.photo using NextJS
   - [x] faq
   - [x] samples preview
 - [x] Create all Pages in Navbar Links
-- [ ] Free Trial CTA
-  - [ ] Edit Title
-  - [ ] Edit description
-  - [ ] Edit CTA button
-  - [ ] Add Photo
-- [ ] embed video - section
+- [x] Free Trial CTA
+  - [x] Edit Title
+  - [x] Edit description
+  - [x] Edit CTA button
+  - [x] ~~Add Photo~~ added Video instead
+- [x] ~~embed video - section~~
 - [ ] What we do section
-  - [ ] add photo
-  - [ ] add title
-  - [ ] add description
-  - [ ] add button
+  - [ ] (add photo) [http://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/61c3bc0dcfff8f1fb2a46029/1640217613230/PREPP-Landscape.jpg?format=1500w]
+  - [ ] add title: What We Do
+  - [ ] add description: Designed specifically to meet the needs of real estate and architectural photographers, our team of editors offer excellent edits, unbeatable prices, and fast turnaround.
+  - [ ] add button: Samples
 - [ ] What we offer section
   - [ ] add title
   - [ ] add description
