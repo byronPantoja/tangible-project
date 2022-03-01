@@ -71,13 +71,6 @@ const ServicesMenu = () => {
               </div>
               <div className="bg-gray-50">
                 <div className="mx-auto max-w-7xl space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
-                  {/* <Link
-                    href="https://player.vimeo.com/video/659875234?h=1980ccb4fb&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-                    className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
-                  >
-                    <PlayIcon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                    <span className="ml-4">Watch Demo</span>
-                  </Link> */}
                   <WatchDemo />
                   {callsToAction.map(MapNavList)}
                 </div>

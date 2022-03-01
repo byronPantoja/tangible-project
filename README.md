@@ -38,24 +38,24 @@ Create FE version of prepp.photo using NextJS
   - [x] Edit CTA button
   - [x] ~~Add Photo~~ added Video instead
 - [x] ~~embed video - section~~
-- [ ] What we do section
-  - [ ] (add photo) [http://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/61c3bc0dcfff8f1fb2a46029/1640217613230/PREPP-Landscape.jpg?format=1500w]
-  - [ ] add title: What We Do
-  - [ ] add description: Designed specifically to meet the needs of real estate and architectural photographers, our team of editors offer excellent edits, unbeatable prices, and fast turnaround.
-  - [ ] add button: Samples
-- [ ] What we offer section
-  - [ ] add title
-  - [ ] add description
-  - [ ] add button
-  - [ ] add photo
-- [ ] How we do it section
-  - [ ] add photo
-  - [ ] add title
-  - [ ] add description
-  - [ ] add button
-- [ ] Let's Talk - CTA
-  - [ ] add title
-  - [ ] add button
+- [x] What we do section
+  - [x] (add photo) [http://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/61c3bc0dcfff8f1fb2a46029/1640217613230/PREPP-Landscape.jpg?format=1500w]
+  - [x] add title: What We Do
+  - [x] add description: Designed specifically to meet the needs of real estate and architectural photographers, our team of editors offer excellent edits, unbeatable prices, and fast turnaround.
+  - [x] add button: Samples
+- [x] What we offer section
+  - [x] add title
+  - [x] add description
+  - [x] add button
+  - [x] add photo
+- [x] How we do it section
+  - [x] add photo
+  - [x] add title
+  - [x] add description
+  - [x] add button
+- [x] Let's Talk - CTA
+  - [x] add title
+  - [x] add button
 - [ ] Add footer section
   - [ ] Add all links from top
   - [ ] add faqs
