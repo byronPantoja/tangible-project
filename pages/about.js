@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import About from '@/components/About'
 
-const aboutPage() {
+const aboutPage = () => {
   return (
     <div>
       <Navbar />

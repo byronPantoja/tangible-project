@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function videoEditing() {
+const videoEditing = () => {
   return (
     <div>
       <Navbar />
-      Video Editing
+      <div>videoEditing</div>
     </div>
   )
 }
+
+export default videoEditing

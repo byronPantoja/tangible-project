@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function Samples() {
+const samples = () => {
   return (
     <div>
       <Navbar />
-      Samples
+      <div>samples</div>
     </div>
   )
 }
+
+export default samples

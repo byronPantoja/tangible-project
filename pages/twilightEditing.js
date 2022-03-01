@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function twilightEditing() {
+const twilightEditing = () => {
   return (
     <div>
       <Navbar />
-      Twilight Editing
+      <div>twilightEditing</div>
     </div>
   )
 }
+
+export default twilightEditing

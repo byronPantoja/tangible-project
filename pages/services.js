@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function Services() {
+const services = () => {
   return (
     <div>
       <Navbar />
-      Services
+      <div>services</div>
     </div>
   )
 }
+
+export default services
