@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function Faq() {
+const faq = () => {
   return (
     <div>
       <Navbar />
-      FAQ
+      <div>faq</div>
     </div>
   )
 }
+
+export default faq

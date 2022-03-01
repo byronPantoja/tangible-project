@@ -1,10 +1,13 @@
 import Navbar from '@/components/Navbar'
+import About from '@/components/About'
 
-export default function About() {
+const aboutPage = () => {
   return (
     <div>
       <Navbar />
-      About
+      <About />
     </div>
   )
 }
+
+export default aboutPage

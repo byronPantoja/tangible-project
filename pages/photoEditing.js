@@ -1,10 +1,12 @@
 import Navbar from '@/components/Navbar'
 
-export default function PhotoEditing() {
+const photoEditing = () => {
   return (
     <div>
       <Navbar />
-      Photo Editing
+      <div>photoEditing</div>
     </div>
   )
 }
+
+export default photoEditing

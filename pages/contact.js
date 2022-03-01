@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 
-export default function Contact() {
+const Contact = () => {
   return (
     <div>
       <Navbar />
@@ -8,3 +8,5 @@ export default function Contact() {
     </div>
   )
 }
+
+export default Contact

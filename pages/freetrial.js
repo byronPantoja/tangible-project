@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 
-export default function freetrial() {
+const freetrial = () => {
   return (
     <div>
       <Navbar />
@@ -37,3 +37,5 @@ export default function freetrial() {
     </div>
   )
 }
+
+export default freetrial
