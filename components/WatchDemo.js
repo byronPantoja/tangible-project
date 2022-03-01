@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { PlayIcon } from '@heroicons/react/outline'
 
-export default function App() {
+const WatchDemo = () => {
   const [modal, setModal] = useState(false)
 
   const openModal = () => {
@@ -37,3 +37,5 @@ export default function App() {
     </>
   )
 }
+
+export default WatchDemo
