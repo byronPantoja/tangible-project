@@ -45,14 +45,11 @@ const Navbar = () => {
               <ContactUs />
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <Link href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                Sign in
-              </Link>
               <Link
-                href="#"
+                href="/freetrial"
                 className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
               >
-                Sign up
+                Free Trial
               </Link>
             </div>
           </div>
@@ -72,6 +69,7 @@ const Navbar = () => {
           focus
           className="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
         >
+          {/* Mobile Navigation */}
           <MobileNav />
         </Popover.Panel>
       </Transition>
