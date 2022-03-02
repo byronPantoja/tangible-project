@@ -1,4 +1,5 @@
 import Image from './Image'
+import Link from './Link'
 import services from '@/data/servicesData'
 import samples from '@/data/samplesData'
 import company from '@/data/companyData'
@@ -55,14 +56,24 @@ const Footer = () => {
                     Samples
                   </h3>
                   <ul role="list" className="mt-4 space-y-4">
-                    {samples.map((item) => (
-                      <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
+                    {samples
+                      .filter((sample, x) => x < 2)
+                      .map((sample) => (
+                        <li key={sample.name} samples={sample}>
+                          <a
+                            href={sample.href}
+                            className="text-base text-gray-500 hover:text-gray-900"
+                          >
+                            {sample.name}
+                          </a>
+                        </li>
+                      ))}
                   </ul>
+                  <div className="mt-6 text-sm font-medium">
+                    <Link href="/samples" className="text-indigo-600 hover:text-indigo-500">
+                      View All Samples <span aria-hidden="true">&rarr;</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
