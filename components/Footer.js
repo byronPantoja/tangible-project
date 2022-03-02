@@ -1,5 +1,5 @@
-import Image from './Image'
 import Link from './Link'
+import Logo from '@/data/logo.svg'
 import services from '@/data/servicesData'
 import samples from '@/data/samplesData'
 import company from '@/data/companyData'
@@ -16,15 +16,9 @@ const Footer = () => {
         <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
-              <Image
-                className="h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-                alt="Company name"
-                height="50"
-                width="50"
-              />
+              <Logo />
               <p className="text-base text-gray-500">
-                Making the world a better place through constructing elegant hierarchies.
+                Real Estate Photo Post Processing Based in Virginia Beach, VA
               </p>
               <div className="flex space-x-6">
                 {social.map((item) => (
