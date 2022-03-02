@@ -95,7 +95,7 @@ const ContactUs = () => {
                     <div className="mt-6 text-sm font-medium">
                       <Link href="#" className="text-indigo-600 hover:text-indigo-500">
                         {' '}
-                        View all posts <span aria-hidden="true">&rarr;</span>
+                        View All Samples <span aria-hidden="true">&rarr;</span>
                       </Link>
                     </div>
                   </div>
