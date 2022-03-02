@@ -66,35 +66,36 @@ const ContactUs = () => {
                         From our samples
                       </h3>
                       <ul role="list" className="mt-6 space-y-6">
-                        {samples.map((post) => (
-                          <li key={post.id} className="flow-root">
-                            <Link
-                              href={post.href}
-                              className="-m-3 flex rounded-lg p-3 hover:bg-gray-100"
-                            >
-                              <div className="hidden flex-shrink-0 sm:block">
-                                <Image
-                                  className="rounded-md object-cover"
-                                  src={post.imageUrl}
-                                  alt={post.title}
-                                  height={post.height}
-                                  width={post.width}
-                                />
-                              </div>
-                              <div className="w-0 flex-1 sm:ml-8">
-                                <h4 className="truncate text-base font-medium text-gray-900">
-                                  {post.name}
-                                </h4>
-                                <p className="mt-1 text-sm text-gray-500">{post.preview}</p>
-                              </div>
-                            </Link>
-                          </li>
-                        ))}
+                        {samples
+                          .filter((sample, x) => x < 2)
+                          .map((sample) => (
+                            <li key={sample.id} samples={sample} className="flow-root">
+                              <Link
+                                href={sample.href}
+                                className="-m-3 flex rounded-lg p-3 hover:bg-gray-100"
+                              >
+                                <div className="hidden flex-shrink-0 sm:block">
+                                  <Image
+                                    className="rounded-md object-cover"
+                                    src={sample.imageUrl}
+                                    alt={sample.title}
+                                    height={sample.height}
+                                    width={sample.width}
+                                  />
+                                </div>
+                                <div className="w-0 flex-1 sm:ml-8">
+                                  <h4 className="truncate text-base font-medium text-gray-900">
+                                    {sample.name}
+                                  </h4>
+                                  <p className="mt-1 text-sm text-gray-500">{sample.preview}</p>
+                                </div>
+                              </Link>
+                            </li>
+                          ))}
                       </ul>
                     </div>
                     <div className="mt-6 text-sm font-medium">
                       <Link href="#" className="text-indigo-600 hover:text-indigo-500">
-                        {' '}
                         View All Samples <span aria-hidden="true">&rarr;</span>
                       </Link>
                     </div>
