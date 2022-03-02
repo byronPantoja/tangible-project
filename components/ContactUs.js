@@ -95,7 +95,7 @@ const ContactUs = () => {
                       </ul>
                     </div>
                     <div className="mt-6 text-sm font-medium">
-                      <Link href="#" className="text-indigo-600 hover:text-indigo-500">
+                      <Link href="/samples" className="text-indigo-600 hover:text-indigo-500">
                         View All Samples <span aria-hidden="true">&rarr;</span>
                       </Link>
                     </div>
