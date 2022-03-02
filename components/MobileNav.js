@@ -3,7 +3,9 @@ import Link from './Link'
 import { Popover } from '@headlessui/react'
 import Logo from '@/data/logo.svg'
 import { XIcon } from '@heroicons/react/outline'
+import MapNavList from './MapNavList'
 import services from '@/data/servicesData'
+import company from '@/data/companyData'
 
 const MobileNav = () => {
   return (
@@ -38,8 +40,7 @@ const MobileNav = () => {
             </div>
             <div className="mt-8 text-base">
               <Link href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                {' '}
-                View all products <span aria-hidden="true">&rarr;</span>
+                View all services <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </nav>
@@ -47,47 +48,9 @@ const MobileNav = () => {
       </div>
       <div className="py-6 px-5">
         <div className="grid grid-cols-2 gap-4">
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Pricing
-          </Link>
-
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Docs
-          </Link>
-
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Company
-          </Link>
-
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Resources
-          </Link>
-
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Blog
-          </Link>
-
-          <Link
-            href="#"
-            className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-          >
-            Contact Sales
-          </Link>
+          <ul role="list" className="mt-5 space-y-6">
+            {company.map(MapNavList)}
+          </ul>
         </div>
       </div>
     </div>
