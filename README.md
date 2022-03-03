@@ -56,13 +56,14 @@ Create FE version of prepp.photo using NextJS
 - [x] Let's Talk - CTA
   - [x] add title
   - [x] add button
-- [ ] Add footer section
-  - [ ] Add all links from top
-  - [ ] add faqs
-  - [ ] add socials
-        git
-- [ ] Services Page
-  - [ ] PE Page
+- [x] Add footer section
+  - [x] Add all links from top
+  - [x] add faqs
+  - [x] add socials
+- [x] Services Page
+  - [x] PE Page
+    - [ ] Photo Comparision Slider
+    - [ ] Title, Text, CTA
   - [ ] VE Page
   - [ ] TE Page
 - [ ] Samples Page

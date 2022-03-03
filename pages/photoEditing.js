@@ -1,94 +1,52 @@
 import ComparisonSlider from '@/components/ComparisonSlider'
 import Navbar from '@/components/Navbar'
-
-import {
-  CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
-  RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
-} from '@heroicons/react/outline'
-
-const features = [
-  {
-    name: 'Push to Deploy',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: CloudUploadIcon,
-  },
-  {
-    name: 'SSL Certificates',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple Queues',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: RefreshIcon,
-  },
-  {
-    name: 'Advanced Security',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: 'Powerful API',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: CogIcon,
-  },
-  {
-    name: 'Database Backups',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
-  },
-]
+import Link from '@/components/Link'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
 
 const photoEditing = () => {
   return (
     <div>
       <Navbar />
-      <ComparisonSlider />
-      <div className="relative bg-white py-16 sm:py-24 lg:py-32">
-        <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-base font-semibold uppercase tracking-wider text-indigo-600">
-            Deploy faster
-          </h2>
-          <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
-          </p>
-          <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis
-            nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
-          </p>
-          <div className="mt-12">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((feature) => (
-                <div key={feature.name} className="pt-6">
-                  <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-                    <div className="-mt-6">
-                      <div>
-                        <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                          <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                        </span>
-                      </div>
-                      <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                        {feature.name}
-                      </h3>
-                      <p className="mt-5 text-base text-gray-500">{feature.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+
+      <main className="lg:relative">
+        <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
+            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span className="block xl:inline">Why Choose</span>{' '}
+              <span className="block text-indigo-600 xl:inline">PREPP.photo?</span>
+            </h1>
+            <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+              The team at PREPP.photo strives for excellence in the art of architectural / real
+              estate photo editing, with a special emphasis on realism. Our signature style focuses
+              on natural looking edits, with only the most essential corrective retouching being
+              performed. We want to re-define the normal “cartoonish” look that has become standard
+              in the industry and help real estate agents represent properties in a more authentic
+              way.
+            </p>
+            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                <a
+                  href="#"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+                >
+                  Get started
+                </a>
+              </div>
+              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <a
+                  href="#"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                >
+                  Live demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div className="relative min-h-screen w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+          <ComparisonSlider />
+        </div>
+      </main>
     </div>
   )
 }
