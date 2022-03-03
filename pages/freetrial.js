@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar'
 const freetrial = () => {
   return (
     <div>
-      <Navbar />
       <div>
         <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8">
           <p className="text-base font-semibold uppercase tracking-wider text-gray-500">
