@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { Tab } from '@headlessui/react'
+import Image from '@/components/Image'
 
 const tabs = [
   {
@@ -117,10 +118,11 @@ const services = () => {
                       </div>
                       <div className="lg:col-span-7">
                         <div className="aspect-w-2 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 sm:aspect-w-5 sm:aspect-h-2">
-                          <img
+                          <Image
                             src={feature.imageSrc}
                             alt={feature.imageAlt}
                             className="object-cover object-center"
+                            layout="fill"
                           />
                         </div>
                       </div>
