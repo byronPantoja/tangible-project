@@ -2,15 +2,8 @@
   "Const Function Export Default": {
     "prefix": "cfed",
     "body": [
-      "import Navbar from '@/components/Navbar';",
-      "",
       "const $TM_FILENAME_BASE = () => {",
-      "\treturn (",
-      "\t\t<div>",
-      "\t\t\t<Navbar />",
-      "\t\t\t<div>$TM_FILENAME_BASE</div>",
-      "\t\t</div>",
-      "\t)",
+      "\treturn <div>$TM_FILENAME_BASE</div>",
       "}",
       "",
       "export default $TM_FILENAME_BASE;"

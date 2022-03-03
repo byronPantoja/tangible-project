@@ -1,3 +1,4 @@
+import ComparisonGallery from '@/components/ComparisonGallery'
 import ComparisonSlider from '@/components/ComparisonSlider'
 import { CheckIcon } from '@heroicons/react/outline'
 const features = [
@@ -107,6 +108,7 @@ const photoService = () => {
             ))}
           </dl>
         </div>
+        <ComparisonGallery />
       </main>
     </div>
   )
