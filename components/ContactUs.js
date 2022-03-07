@@ -1,6 +1,6 @@
+import { Fragment, useRef } from 'react'
 import Image from 'next/image'
 import Link from './Link'
-import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
@@ -14,6 +14,7 @@ function classNames(...classes) {
 }
 
 const ContactUs = () => {
+  const buttonRef = useRef(null)
   return (
     <Popover>
       {({ open }) => {
@@ -21,9 +22,10 @@ const ContactUs = () => {
           <>
             <Popover.Button
               className={classNames(
-                open ? 'text-gray-900' : 'text-gray-500',
+                open ? 'text-indigo-700' : 'text-gray-500',
                 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
               )}
+              ref={buttonRef}
             >
               <span>Contact Us</span>
               <ChevronDownIcon
@@ -56,7 +58,21 @@ const ContactUs = () => {
                         Company
                       </h3>
                       <ul role="list" className="mt-5 space-y-6">
-                        {company.map(MapNavList)}
+                        {company.map((item) => (
+                          <li key={item.name} className="flow-root">
+                            <Link
+                              href={item.href}
+                              className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                              onClick={() => buttonRef.current?.click()}
+                            >
+                              <item.icon
+                                className="h-6 w-6 flex-shrink-0 text-gray-400"
+                                aria-hidden="true"
+                              />
+                              <span className="ml-4">{item.name}</span>
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </nav>
@@ -73,6 +89,7 @@ const ContactUs = () => {
                               <Link
                                 href={sample.href}
                                 className="-m-3 flex rounded-lg p-3 hover:bg-gray-100"
+                                onClick={() => buttonRef.current?.click()}
                               >
                                 <div className="hidden flex-shrink-0 sm:block">
                                   <Image
@@ -95,7 +112,11 @@ const ContactUs = () => {
                       </ul>
                     </div>
                     <div className="mt-6 text-sm font-medium">
-                      <Link href="/samples" className="text-indigo-600 hover:text-indigo-500">
+                      <Link
+                        href="/samples"
+                        className="text-indigo-600 hover:text-indigo-500"
+                        onClick={() => buttonRef.current?.click()}
+                      >
                         View All Samples <span aria-hidden="true">&rarr;</span>
                       </Link>
                     </div>
