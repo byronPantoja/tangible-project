@@ -7,8 +7,6 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import company from '@/data/companyData'
 import samples from '@/data/samplesData'
 
-import MapNavList from './MapNavList'
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }

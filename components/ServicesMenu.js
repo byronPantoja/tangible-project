@@ -2,7 +2,6 @@ import Link from './Link'
 import { Fragment, useRef } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
-import MapNavList from './MapNavList'
 
 import services from '@/data/servicesData'
 import callsToAction from '@/data/ctaData'
