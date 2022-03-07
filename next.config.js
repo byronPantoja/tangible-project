@@ -10,10 +10,13 @@ module.exports = {
   },
   images: {
     domains: [
+      'localhost',
       'images.unsplash.com',
       'tailwindui.com',
       'images.squarespace-cdn.com',
       'static1.squarespace.com',
+      'static1.squarespace.com/static',
+      'squarespace.com',
     ],
   },
 }

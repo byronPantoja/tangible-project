@@ -1,4 +1,4 @@
-import Image from './Image'
+import Image from 'next/image'
 import Link from './Link'
 import { Popover } from '@headlessui/react'
 import Logo from '@/data/logo.svg'

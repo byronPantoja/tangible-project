@@ -1,7 +1,16 @@
 import { useState, useRef } from 'react'
-import Image from '@/components/Image'
+import squareSpaceImages from '@/data/squareSpaceImage'
 
-const ComparisonSlider = () => {
+const ComparisonSlider = (input1, input2) => {
+  const beforeImage = (x) => {
+    x = parseInt(x)
+    return squareSpaceImages[x]
+  }
+  const afterImage = (y) => {
+    y = parseInt(y)
+    return squareSpaceImages[y]
+  }
+
   const [imageRevealFraq, setImageRevealFraq] = useState(0.5)
   const imageContainer = useRef(undefined)
 
@@ -35,19 +44,31 @@ const ComparisonSlider = () => {
     window.onmouseup = undefined
   }
 
+  // const someFunction = (input1, input2) => {
+  //   input1 = ComparisonImage1(input1)
+  //   input2 = ComparisonImage2(input2)
+  // const ComparisonImage1 = (inputb4) => {
+  //   inputb4 = parseInt(inputb4)
+  //   return squareSpaceImages[inputb4]
+  // }
+  // const ComparisonImage2 = (inputA4) => {
+  //   inputA4 = parseInt(inputA4)
+  //   return squareSpaceImages[inputA4]
+  // }
+
+  // if (input1) {
+  //   ComparisonImage1(input1)
+  // } else if (input2) {
+  //   ComparisonImage2(input2)
+  // })
+
   return (
     <div className="aspect-h-9 aspect-w-16">
       <div
         ref={imageContainer}
         className="group aspect-h-9 aspect-w-16 relative mx-auto select-none"
       >
-        <Image
-          src="https://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/62084f386f98284656405b54/1644711737168/Done-2.jpg"
-          alt="before"
-          layout="fill"
-          objectFit="cover"
-          className="pointer-events-none"
-        />
+        {beforeImage(input1)}
         <div
           style={{
             filter: 'transparent(100%)',
@@ -55,15 +76,8 @@ const ComparisonSlider = () => {
               imageRevealFraq * 100
             }% 100%, 0 100%)`,
           }}
-          className="absolute inset-0 select-none "
         >
-          <Image
-            src="https://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/62084f307eb94a2d215ecf41/1644711729229/Done-1.jpg"
-            alt="after"
-            layout="fill"
-            objectFit="cover"
-            className="pointer-events-none"
-          />
+          {afterImage(input2)}
 
           <div
             style={{ left: `${imageRevealFraq * 100}%` }}

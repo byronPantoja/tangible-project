@@ -1,4 +1,4 @@
-import Image from '@/components/Image'
+import Image from 'next/image'
 import samples from '@/data/samplesData'
 
 const samplesPage = () => {

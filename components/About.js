@@ -1,6 +1,6 @@
 import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 import Link from './Link'
-import Image from './Image'
+import Image from 'next/image'
 
 const About = () => {
   return (

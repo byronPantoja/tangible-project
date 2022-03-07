@@ -1,4 +1,3 @@
-import ComparisonGallery from '@/components/ComparisonGallery'
 import ComparisonSlider from '@/components/ComparisonSlider'
 import { CheckIcon } from '@heroicons/react/outline'
 const features = [
@@ -81,7 +80,7 @@ const photoService = () => {
           </div>
         </div>
         <div className="mx-auto max-w-7xl pt-60 pb-3 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
-          <ComparisonSlider />
+          {ComparisonSlider(0, 1)}
         </div>
         <div className="mx-auto max-w-7xl py-5 px-4 sm:px-2 lg:py-24 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -108,7 +107,6 @@ const photoService = () => {
             ))}
           </dl>
         </div>
-        <ComparisonGallery />
       </main>
     </div>
   )

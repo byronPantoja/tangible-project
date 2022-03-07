@@ -1,4 +1,4 @@
-import Image from './Image'
+import Image from 'next/image'
 import Link from './Link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'

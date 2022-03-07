@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Tab } from '@headlessui/react'
-import Image from '@/components/Image'
+import Image from 'next/image'
 
 const tabs = [
   {
