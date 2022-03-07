@@ -1,5 +1,5 @@
 import Link from './Link'
-import { Fragment } from 'react'
+import { Fragment, useRef } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import MapNavList from './MapNavList'
@@ -12,7 +12,16 @@ import WatchDemo from './WatchDemo'
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
+
+// ;<Popover>
+//   <Popover.Button ref={buttonRef}>Click me</Popover.Button>
+//   <Popover.Panel>
+//     <button onClick={() => buttonRef.current?.click()}>Content</button>
+//   </Popover.Panel>
+// </Popover>
+
 const ServicesMenu = () => {
+  const buttonRef = useRef(null)
   return (
     <Popover>
       {({ open }) => (
@@ -22,6 +31,7 @@ const ServicesMenu = () => {
               open ? 'text-gray-900' : 'text-gray-500',
               'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
             )}
+            ref={buttonRef}
           >
             <span>Services</span>
             <ChevronDownIcon
@@ -49,6 +59,7 @@ const ServicesMenu = () => {
                     key={item.name}
                     href={item.href}
                     className="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50"
+                    onClick={() => buttonRef.current?.click()}
                   >
                     <div className="flex md:h-full lg:flex-col">
                       <div className="flex-shrink-0">
