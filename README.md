@@ -62,14 +62,14 @@ Create FE version of prepp.photo using NextJS
   - [x] add socials
 - [x] Services Page
   - [x] PE Page
-    - [ ] Photo Comparision Slider
-    - [ ] Title, Text, CTA
-  - [ ] VE Page
-  - [ ] TE Page
-- [ ] Samples Page
-  - [ ] PE Samples
-  - [ ] VE Samples
-  - [ ] TE Samples
-- [ ] FAQ Page
-- [ ] Contact Page
+    - [x] Photo Comparision Slider
+    - [x] Title, Text, CTA
+  - [x] VE Page
+  - [x] TE Page
+- [x] Samples Page
+  - [x] PE Samples
+  - [x] VE Samples
+  - [x] TE Samples
+- [x] FAQ Page
+- [x] Contact Page
 - [x] Free Trial Page
