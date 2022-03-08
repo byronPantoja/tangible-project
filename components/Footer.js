@@ -8,7 +8,7 @@ import social from '@/data/socialData'
 
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-60">
       <footer className="bg-white" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
