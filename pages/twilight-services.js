@@ -27,6 +27,11 @@ const features = [
     description:
       'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
   },
+  {
+    name: 'Contrast Harmonization',
+    description:
+      'Sed mi, dapibus turpis orci posuere integer. A porta viverra posuere adipiscing turpis.',
+  },
 ]
 const twilightEditing = () => {
   return (
@@ -90,7 +95,7 @@ const twilightEditing = () => {
               Virtual Twilight Specialist focus on getting that perfect look for your homes.
             </span>
           </div>
-          <dl className="mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
+          <dl className="mt-12 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
