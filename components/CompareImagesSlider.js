@@ -3,7 +3,7 @@ import squareSpaceImages from '@/data/squareSpaceImages'
 
 const CompareImagesSlider = (beforeImage, afterImage) => {
   const [imageRevealFraq, setImageRevealFraq] = useState(0.5)
-  const imageContainer = useRef(undefined)
+  const imageContainer = useRef(null)
 
   const slide = (xPosition) => {
     const containerBoundingRect = imageContainer.current.getBoundingClientRect()
@@ -19,7 +19,7 @@ const CompareImagesSlider = (beforeImage, afterImage) => {
   }
 
   const handleTouchMove = (e) => {
-    slide(e.touches.item(0).clientX)
+    slide(e.touches.item(0)?.clientX ?? 'fallback here')
   }
 
   const handleMouseDown = () => {

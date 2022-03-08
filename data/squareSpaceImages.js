@@ -73,6 +73,24 @@ const squareSpaceImages = [
     objectFit="cover"
     className="pointer-events-none"
   />,
+  <Image
+    key="set5"
+    id="8"
+    src="https://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/61c6993904177b70b0321f96/1640405306316/virtual+twilight+photo.jpg"
+    alt="set5 before"
+    layout="fill"
+    objectFit="cover"
+    className="pointer-events-none"
+  />,
+  <Image
+    key="set5"
+    id="9"
+    src="https://static1.squarespace.com/static/60be3f15c04ff53428559e91/t/61c699347d5f9448ada0f031/1640405301356/before+twilight.jpg"
+    alt="set5 after"
+    layout="fill"
+    objectFit="cover"
+    className="pointer-events-none"
+  />,
 ]
 
 module.exports = squareSpaceImages
