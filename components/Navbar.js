@@ -1,17 +1,11 @@
 import Link from './Link'
-import Image from 'next/image'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { MenuIcon } from '@heroicons/react/outline'
 import ServicesMenu from './ServicesMenu'
 import Logo from '@/data/logo.svg'
-
 import ContactUs from './ContactUs'
 import MobileNav from './MobileNav'
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 const Navbar = () => {
   return (
