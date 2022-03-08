@@ -43,11 +43,31 @@ const features = [
       'Quisque sapien nunc nisl eros. Facilisis sagittis maecenas id dignissim tristique proin sed.',
   },
 ]
+const files = [
+  {
+    className: 'aspect-video w-full',
+    src: 'https://player.vimeo.com/video/537317894?h=712e02bd53&app_id=122963',
+    allow:
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+  },
+  {
+    className: 'aspect-video w-full',
+    src: 'https://player.vimeo.com/video/641919142?h=d7ea6014f7&app_id=122963',
+    allow:
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+  },
+  {
+    className: 'aspect-video w-full',
+    src: 'https://player.vimeo.com/video/537325941?h=d1c4854e66&app_id=122963',
+    allow:
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+  },
+]
 const videoEditing = () => {
   return (
     <div>
       <main className="lg:relative">
-        <div className="mx-auto w-full max-w-7xl pt-12 pb-8 text-center lg:py-48 lg:text-left">
+        <div className="mx-auto w-full max-w-7xl pt-12 pb-8 text-center lg:py-48 lg:text-right">
           <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               {' '}
@@ -85,9 +105,14 @@ const videoEditing = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-7xl pt-60 pb-3 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
-          {/* SLIDER */}
-          {CompareImagesSlider(0, 1)}
+        <div className="mx-auto max-w-7xl pt-16 pb-3 lg:absolute lg:inset-y-0 lg:right-3 lg:h-full lg:w-1/2">
+          <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+            <iframe
+              className="aspect-video w-full"
+              src="https://player.vimeo.com/video/537317894?h=712e02bd53&app_id=122963"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
         </div>
         <div className="mx-auto max-w-7xl py-5 px-4 sm:px-2 lg:py-24 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -113,6 +138,18 @@ const videoEditing = () => {
               </div>
             ))}
           </dl>
+          <ul
+            role="list"
+            className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-6"
+          >
+            {files.map((e) => (
+              <li key={e.source} className="relative">
+                <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                  <iframe className={e.className} src={e.src} allow={e.allow}></iframe>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </main>
     </div>
